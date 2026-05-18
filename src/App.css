@@ -1,0 +1,95 @@
+.header {
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.header li {
+  cursor: pointer;
+  font-weight: 500;
+  color: #64748b;
+  transition: color 0.2s;
+}
+
+.header li:hover {
+  color: #64748b;
+}
+
+.box {
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.box:hover {
+  background-color: #f3e8ff;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #e2e8f0;
+  color: #94a3b8;
+}
+
+/* Dark Mode Styles */
+.dark-mode .header {
+  background-color: #1e293b;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.dark-mode .header li {
+  color: #94a3b8;
+}
+
+.dark-mode .header li:hover {
+  color: #c084fc;
+}
+
+.dark-mode .box:hover {
+  background-color: rgba(168, 85, 247, 0.15);
+}
+
+.dark-mode footer {
+  border-top: 1px solid #334155;
+  color: #94a3b8;
+}
+
+@media (prefers-color-scheme: dark) {
+  .header {
+    background-color: #1e293b;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+  .header li {
+    color: #94a3b8;
+  }
+  .header li:hover {
+    color: #c084fc;
+  }
+  .box:hover {
+    background-color: rgba(168, 85, 247, 0.15);
+  }
+  footer {
+    border-top: 1px solid #334155;
+  }
+}
