@@ -2,7 +2,7 @@
 * Um site feito em react.
 
 ## Funcionalidades
-- **Componentes**: `'Header`, `Card`, `Footer`.
+- **Componentes**: `Header`, `Card`, `Footer`.
 - **Reutilização**: O componente `Card` é reutilizado 4 vezes na página principal.
 - **Props**: `nome` e `preco`
 - **useState**: Modo escuro
